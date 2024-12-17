@@ -1,0 +1,21 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Archivos de Jupyter
+.ipynb_checkpoints/
+
+# Datos
+data/*
+!data/Internet_cleaned.xlsx
+!data/Consolidado_KPI.xlsx
+!data/KPI_Analysis_Final.xlsx
+
+# Docker
+*.log
+*.pid
+.env
+docker-compose.override.yml
