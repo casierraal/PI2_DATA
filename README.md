@@ -1,101 +1,113 @@
-📊 Telecom Data Analysis
-📝 Descripción
-Este proyecto analiza los datos del sector de telecomunicaciones en Argentina, enfocado en:
+# 📊 Telecom Data Analysis
 
-Limpieza de datos.
-Análisis Exploratorio de Datos (EDA).
-Creación de indicadores clave (KPIs) y generación de conclusiones.
-Creación de un dashboard interactivo en Power BI.
-El objetivo es brindar insights importantes sobre el acceso a Internet, telefonía fija/móvil, TV y otros servicios de telecomunicaciones.
+## 📝 Descripción
 
-📂 Estructura del proyecto
-La estructura del proyecto es la siguiente:
+Este proyecto analiza datos del sector de telecomunicaciones en **Argentina**, con foco en:
 
-plaintext
-Copy code
+- 🧹 Limpieza y transformación de datos.  
+- 📊 Análisis Exploratorio de Datos (EDA).  
+- 📈 Creación de indicadores clave (KPI) y conclusiones estratégicas.  
+- 📊 Desarrollo de un **panel interactivo en Power BI**.  
+
+El objetivo principal es generar insights relevantes sobre el acceso a **Internet, telefonía fija/móvil, TV por suscripción** y otros servicios de telecomunicaciones.
+
+---
+
+## 📁 Estructura del Proyecto
+
 telecom_data_analysis/
 │
-├── docker-compose.yml   # Configuración para ejecutar Docker
-├── dockerfile           # Instrucciones de Docker
-├── README.md            # Documentación del proyecto
-├── requirements.txt     # Librerías necesarias
-│
-├── data/                # Datos originales y limpios
-│   ├── Internet.xlsx
-│   ├── Telefonia_movil.xlsx
-│   ├── ...
-│
-├── notebooks/           # Notebooks para el EDA
-│   ├── eda.ipynb        # Exploratory Data Analysis
-│
-├── scripts/             # Scripts Python para procesamiento
-│   ├── clean_data.py    # Script para limpieza de datos
-│   ├── analyze_data.py  # Script para análisis de KPIs
-│
-└── dashboards/          # Dashboards interactivos
-    ├── powerbi.pbix     # Archivo del dashboard de Power BI
-🛠 Requerimientos
-Para ejecutar este proyecto, necesitas tener instalados:
+├── docker-compose.yml # Configuración de Docker
 
-Docker
-Python 3.10 o superior
-Librerías Python: pandas, numpy, matplotlib, openpyxl, jupyter
-Si no tienes Docker instalado, puedes descargarlo aquí.
+├── dockerfile # Instrucciones para construir la imagen Docker
 
-🚀 Cómo ejecutar el proyecto con Docker
+├── README.md # Documentación del proyecto
+
+├── requisitos.txt # Librerías necesarias
+
+├── data/ # Datos originales y limpios
+│ ├── Internet.xlsx
+│ ├── Telefonia_movil.xlsx
+│ └── ...
+
+├── notebooks/ # Análisis exploratorio
+│ └── eda.ipynb
+
+├── guiones/ # Scripts para procesamiento de datos
+│ ├── clean_data.py
+│ └── analyze_data.py
+
+└── dashboards/
+└── powerbi.pbix # Archivo del panel de Power BI
+
+## 🛠 Requerimientos
+
+Para ejecutar este proyecto necesitas tener instalado:
+
+- Docker  
+- Python 3.10 o superior  
+- Librerías de Python:
+  - `pandas`
+  - `numpy`
+  - `matplotlib`
+  - `openpyxl`
+  - `jupyter`
+
+Si no tienes Docker, puedes descargarlo desde [https://www.docker.com/](https://www.docker.com/).
+
+---
+
+## 🚀 Ejecución con Docker
+
 Clona el repositorio:
 
-bash
-Copy code
-git clone <URL-del-repositorio>
+```bash
+git clone https://github.com/tu-usuario/telecom_data_analysis.git
 cd telecom_data_analysis
-Construye y ejecuta el contenedor Docker:
+Construye y ejecuta el contenedor:
 
-bash
-Copy code
 docker-compose up
-Abre el navegador y ve a:
+Abre tu navegador y accede a:
 
-text
-Copy code
+arduino
 http://localhost:8888
-Allí encontrarás el entorno Jupyter Notebook para explorar los datos.
+Ahí encontrarás el entorno Jupyter Notebook para explorar y ejecutar el análisis.
 
-📊 Scripts y Notebooks
-notebooks/eda.ipynb:
-Contiene el Análisis Exploratorio de Datos (EDA) con gráficos y visualizaciones.
+📂 Scripts y Notebooks
+notebooks/eda.ipynb: Análisis exploratorio con gráficos y visualizaciones.
 
-scripts/clean_data.py:
-Limpia los datos eliminando valores nulos y duplicados.
+guiones/clean_data.py: Limpieza de datos (valores nulos, duplicados, etc.).
 
-scripts/analyze_data.py:
-Realiza cálculos de KPIs y otros análisis.
+guiones/analyze_data.py: Cálculo de KPIs y análisis de resultados.
 
-📈 Dashboards
-El dashboard de Power BI se encuentra en la carpeta dashboards/. Contiene:
+📈 Panel Interactivo
+El archivo dashboards/powerbi.pbix contiene:
 
-Visualizaciones interactivas del comportamiento de los servicios de telecomunicaciones.
-Indicadores clave (KPIs), como el aumento en el acceso a Internet.
+Visualizaciones sobre comportamiento de servicios de telecomunicaciones.
+
+KPIs estratégicos como el aumento en el acceso a Internet por cada 100 hogares.
+
 🎯 KPIs del Proyecto
-Se analizaron y calcularon los siguientes KPIs:
+Indicadores clave analizados:
 
-Aumento del 2% en el acceso a Internet por cada 100 hogares:
+Aumento del acceso a Internet por cada 100 hogares.
 
 Fórmula:
-text
-Copy code
+
 KPI = ((Nuevo acceso - Acceso actual) / Acceso actual) * 100
-KPIs adicionales:
+Penetración de telefonía móvil por provincia.
 
-(Ejemplo) Penetración de telefonía móvil por provincia.
-(Ejemplo) Variación trimestral en accesos a TV por suscripción.
-📥 Datos
-Los datos utilizados en este proyecto provienen de archivos Excel ubicados en la carpeta data/.
+Variación trimestral en accesos a TV por suscripción.
 
-🧑‍💻 Autor
-Carlos Alfredo Sierra Alarcon
+📥 Fuente de Datos
+Los archivos .xlsx están ubicados en la carpeta data/ y provienen de fuentes oficiales del sector de telecomunicaciones en Argentina.
 
+👤 Autor
+Carlos Alfredo Sierra Alarcón
+📧 alfredosierraalarcon@gmail.com
+🔗 LinkedIn
+🌐 GitHub
+📱 +(34) 613 436 460
 
-⚙️ Licencia
-Este proyecto es de uso educativo y no debe utilizarse para toma de decisiones reales.
-
+⚖️ Licencia
+Este proyecto tiene fines educativos y no debe ser utilizado para la toma de decisiones reales en entornos productivos o comerciales.
